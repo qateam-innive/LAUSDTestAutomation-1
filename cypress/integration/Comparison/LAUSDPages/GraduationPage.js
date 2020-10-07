@@ -45,6 +45,7 @@ class GraduationPages {
                 .should('be.visible')
           
                 cy.verifylist(',', listofoperationaldashboard, operationalprefix, operationalsuffix, 'result1', 'operationaldashboard', ',')             
+                cy.verifylist(',', listofoperationaldashboard, operationalprefix, operationalsuffix, 'result1', 'operationaldashboard', ',')             
 
             }
 
