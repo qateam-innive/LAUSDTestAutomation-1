@@ -1,0 +1,207 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-16T12:58:35.067Z",
+    "end": "2020-10-16T12:58:36.626Z",
+    "duration": 1559,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c82b2b6a-f4ef-42c3-a60d-f24b4f3405ab",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Comparison\\MMEDPageComparisonTest.js",
+      "file": "cypress\\integration\\Tests\\Comparison\\MMEDPageComparisonTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+          "title": "MMEDPageTest",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify title of MMEDpage",
+              "fullTitle": "MMEDPageTest verify title of MMEDpage",
+              "timedOut": null,
+              "duration": 141,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagetitle=' + this.d1.mmedpagetitle).to.equal('mmedpagetitle=' + this.d2.mmedpagetitle);",
+              "err": {},
+              "uuid": "aabae034-4f6a-4002-93a6-21b7e3cd645d",
+              "parentUUID": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify subtitle of MMEDpage",
+              "fullTitle": "MMEDPageTest verify subtitle of MMEDpage",
+              "timedOut": null,
+              "duration": 32,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "3003a11a-9116-42dd-9073-7012aa8f48b9",
+              "parentUUID": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify title of metrics",
+              "fullTitle": "MMEDPageTest Verify title of metrics",
+              "timedOut": null,
+              "duration": 819,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.metrictitle).to.equal('mmedpagesubtitle=' + this.d2.metrictitle);",
+              "err": {
+                "message": "AssertionError: expected 'mmedpagesubtitle=Dual Language/Bilingual Education,RFEP Enrollment,English Learner,LTEL,Number of RFEPS to Date,' to equal 'mmedpagesubtitle=Dual Language/Bilingual Education,RFEP Enrollment,English Learner,LTEL,'",
+                "estack": "AssertionError: expected 'mmedpagesubtitle=Dual Language/Bilingual Education,RFEP Enrollment,English Learner,LTEL,Number of RFEPS to Date,' to equal 'mmedpagesubtitle=Dual Language/Bilingual Education,RFEP Enrollment,English Learner,LTEL,'\n    at Context.eval (http://localhost:60076/__cypress/tests?p=cypress\\integration\\Tests\\Comparison\\MMEDPageComparisonTest.js:945:58)",
+                "diff": "- 'mmedpagesubtitle=Dual Language/Bilingual Education,RFEP Enrollment,English Learner,LTEL,Number of RFEPS to Date,'\n+ 'mmedpagesubtitle=Dual Language/Bilingual Education,RFEP Enrollment,English Learner,LTEL,'\n"
+              },
+              "uuid": "eccf114e-cbca-44a9-9fb5-26f3d6f21a65",
+              "parentUUID": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify metrics data",
+              "fullTitle": "MMEDPageTest Verify metrics data",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "0065c942-1fbc-4389-9cf6-ccf20d9c2902",
+              "parentUUID": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify number of Operational Dashboard",
+              "fullTitle": "MMEDPageTest Verify number of Operational Dashboard",
+              "timedOut": null,
+              "duration": 46,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "17389f62-bb35-4fa0-b464-8c168c561f48",
+              "parentUUID": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify title of Operational Dashboard",
+              "fullTitle": "MMEDPageTest Verify title of Operational Dashboard",
+              "timedOut": null,
+              "duration": 61,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "f53bef7e-3c33-43c5-9953-8a6bc79c863e",
+              "parentUUID": "6e1a3586-367b-4f3d-80e1-7ed1b6393c09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aabae034-4f6a-4002-93a6-21b7e3cd645d",
+            "3003a11a-9116-42dd-9073-7012aa8f48b9",
+            "0065c942-1fbc-4389-9cf6-ccf20d9c2902",
+            "17389f62-bb35-4fa0-b464-8c168c561f48",
+            "f53bef7e-3c33-43c5-9953-8a6bc79c863e"
+          ],
+          "failures": [
+            "eccf114e-cbca-44a9-9fb5-26f3d6f21a65"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1125,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

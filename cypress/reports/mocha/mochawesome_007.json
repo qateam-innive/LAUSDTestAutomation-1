@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-16T12:34:54.140Z",
+    "end": "2020-10-16T12:34:54.809Z",
+    "duration": 669,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b7391596-a62a-423e-aaff-d9cc1185e717",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Comparison\\MMEDPageComparisonTest.js",
+      "file": "cypress\\integration\\Tests\\Comparison\\MMEDPageComparisonTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+          "title": "MMEDPageTest",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify title of MMEDpage",
+              "fullTitle": "MMEDPageTest verify title of MMEDpage",
+              "timedOut": null,
+              "duration": 329,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagetitle=' + this.d1.mmedpagetitle).to.equal('mmedpagetitle=' + this.d2.mmedpagetitle);",
+              "err": {},
+              "uuid": "9c8a2a2a-a6b9-4ba2-8cbb-ea8d6b3b18ad",
+              "parentUUID": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify subtitle of MMEDpage",
+              "fullTitle": "MMEDPageTest verify subtitle of MMEDpage",
+              "timedOut": null,
+              "duration": 175,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "3dcfcbe7-88b1-44e3-802f-1544c6bbe15d",
+              "parentUUID": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify title of metrics",
+              "fullTitle": "MMEDPageTest Verify title of metrics",
+              "timedOut": null,
+              "duration": 37,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "56dec222-bec4-445f-97dd-864beebfd1bc",
+              "parentUUID": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify metrics data",
+              "fullTitle": "MMEDPageTest Verify metrics data",
+              "timedOut": null,
+              "duration": 39,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "8f296a7c-a96c-47b5-9b36-89966dbf0587",
+              "parentUUID": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify number of Operational Dashboard",
+              "fullTitle": "MMEDPageTest Verify number of Operational Dashboard",
+              "timedOut": null,
+              "duration": 47,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "315e0507-4a34-4ca5-b6c9-26e8f882daee",
+              "parentUUID": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify title of Operational Dashboard",
+              "fullTitle": "MMEDPageTest Verify title of Operational Dashboard",
+              "timedOut": null,
+              "duration": 47,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('mmedpagesubtitle=' + this.d1.mmedpagesubtitle).to.equal('mmedpagesubtitle=' + this.d2.mmedpagesubtitle);",
+              "err": {},
+              "uuid": "1813f727-caf3-4e16-9d97-fae111a0db4a",
+              "parentUUID": "2213f41a-8281-4e59-abef-8c5f0b1b5138",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9c8a2a2a-a6b9-4ba2-8cbb-ea8d6b3b18ad",
+            "3dcfcbe7-88b1-44e3-802f-1544c6bbe15d",
+            "56dec222-bec4-445f-97dd-864beebfd1bc",
+            "8f296a7c-a96c-47b5-9b36-89966dbf0587",
+            "315e0507-4a34-4ca5-b6c9-26e8f882daee",
+            "1813f727-caf3-4e16-9d97-fae111a0db4a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 674,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

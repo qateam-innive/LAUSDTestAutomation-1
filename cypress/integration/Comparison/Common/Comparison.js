@@ -4,27 +4,16 @@ beforeEach(function () {
         this.d1 = d1
     })
 
-    cy.fixture('result2').then((d2) => {
+  /*  cy.fixture('result2').then((d2) => {
         this.d2 = d2
-    })
+    })*/
 })
 
 it('TotalStudentsReport', function (){
-    cy.log('currentenrollmentcount=schoolreporcount')
-expect(this.d1.CurrentEnrollmentcount).to.equal(this.d1.SchoolReporCount)
-cy.log('currentenrollmentcount=studentreportcount')
-expect(this.d1.CurrentEnrollmentcount).to.equal(this.d1.StudentReportCount)
-
+ 
+expect(this.d1.numberofstudents_StudentReport).to.equal(this.d1.numberofstudents_SchoolReport1+this.d1.numberofstudents_SchoolReport2+this.d1.numberofstudents_SchoolReport3+this.d1.numberofstudents_SchoolReport4)
 })
 
-
-it('TotalStudentsReport', function (){
-    cy.log('currentenrollmentcount=schoolreporcount')
-expect(this.d1.CurrentEnrollmentcount).to.equal(this.d1.SchoolReporCount)
-cy.log('currentenrollmentcount=studentreportcount')
-expect(this.d1.CurrentEnrollmentcount).to.equal(this.d1.StudentReportCount)
-
-})
 
 it.skip('analyticarealength', function () {
 

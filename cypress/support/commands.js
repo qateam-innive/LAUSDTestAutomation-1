@@ -23,14 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-Cypress.Commands.add('invoketext', (start, datatobeverified, result, data, end) => {
+Cypress.Commands.add('invoketext', (datatobeverified, result, data) => {
   cy.get(datatobeverified)
     .invoke('text').then(value => {
-      cy.writeFile('./cypress/fixtures/' + result + '.json', start + '"' + data + '":' + '' + '"' + value + '"' + end+"\n", { flag: 'a+' })
+      cy.writeFile('./cypress/fixtures/' + result + '.json', '"' + data + '":' + '' + '"' + value + '",'+"\n", { flag: 'a+' })
     })
 })
 
-Cypress.Commands.add('pagelaunch', (start, pageclick, pagetitle, result, data, end) => {
+Cypress.Commands.add('pagelaunch', (pageclick, pagetitle, result, data) => {
 
   cy.get(pageclick)
     .scrollIntoView()
@@ -45,7 +45,7 @@ Cypress.Commands.add('pagelaunch', (start, pageclick, pagetitle, result, data, e
   })
   cy.get(pagetitle)
     .invoke('text').then(value => {
-      cy.writeFile('./cypress/fixtures/' + result + '.json', start + '"' + data + '":' + '' + '"' + value + '"' + end+"\n", { flag: 'a+' })
+      cy.writeFile('./cypress/fixtures/' + result + '.json', '"' + data + '":' + '' + '"' + value + '",'+"\n", { flag: 'a+' })
     })
 })
 
@@ -84,12 +84,12 @@ Cypress.Commands.add('subjectstext', (start, analyticareas, subjects, result, da
     })
 })
 
-Cypress.Commands.add('verifylist', (start, list, prefix, suffix, result, data, end) => {
+Cypress.Commands.add('verifylist', (list, prefix, suffix, result, data) => {
 
   cy.get(list)
     .then(($list) => {
       const listcount = $list.length;
-      cy.writeFile('./cypress/fixtures/' + result + '.json', start + '"' + data + '":' + '' + '[', { flag: 'a+' })
+      cy.writeFile('./cypress/fixtures/' + result + '.json', '"' + data + '":' + '' + '[', { flag: 'a+' })
       var i;
       for (i = 1; i < (listcount + 1); i++) {
         const list1 = prefix + i + suffix
@@ -98,8 +98,8 @@ Cypress.Commands.add('verifylist', (start, list, prefix, suffix, result, data, e
             cy.writeFile('./cypress/fixtures/' + result + '.json', '"'+value + '"'+ ',' ,{ flag: 'a+' })
           })
       }
-      cy.writeFile('./cypress/fixtures/' + result + '.json',']'+"\n", { flag: 'a+' })
-      cy.writeFile('./cypress/fixtures/' + result + '.json', start + '"' + data + 'count' + '":' + listcount+"\n", { flag: 'a+' })
+      cy.writeFile('./cypress/fixtures/' + result + '.json','""],'+"\n", { flag: 'a+' })
+      cy.writeFile('./cypress/fixtures/' + result + '.json', '"' + data + 'count' + '":' + listcount+','+"\n", { flag: 'a+' })
 
     })
 })

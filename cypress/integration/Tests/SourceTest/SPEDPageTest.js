@@ -17,18 +17,18 @@ describe('MMEDPageTest', function () {
         const lp = new LoginPages
         lp.login()
         cy.wait(120000)
-        cy.writeFile('./cypress/fixtures/result1.json', '{')
+
         const mp = new MMEDPages
         //MMED Page
         mp.verifyMMEDpagetitlesubtitleSource()
         mp.verifymetricsataglanceSource()
         mp.verifyoperationaldashboardSource()
         //MMED Dashboard
-        mp.navigatingtommeddashboard()
-        //  mp.verifymmedtilesSource()
-        mp.verifyprofilesummarySource()
+        mp.navigatingtommeddashboardSource()
+      //  mp.verifymmedtilesSource()
+mp.verifyprofilesummarydropdown()
 
-        cy.writeFile('./cypress/fixtures/result1.json', '"":""}', { flag: 'a+' })
+
     })
 
 
